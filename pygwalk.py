@@ -25,7 +25,7 @@ st.subheader('Pneumatic Clutch Actuation data from vehicles')
 def load_data(url):
     df = pd.read_csv(url)
     return df
-df = load_data("testtable(1).csv")
+df = load_data("Book1.csv")
 
 
 def load_config(file_path):
