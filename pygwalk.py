@@ -25,12 +25,12 @@ st.subheader('Pneumatic Clutch Actuation data from vehicles')
 def load_data(url):
     df = pd.read_csv(url)
     return df
-df = load_data("real_data.csv")
+df = load_data("testtable(1).csv")
 
 
 def load_config(file_path):
     with open(file_path, 'r') as config_file:
         config_str = config_file.read()
     return config_str
-config = load_config('config.json')
+config = load_config('config1.json')
 pyg.walk(df.head(10500), env='Streamlit', dark='dark', spec=config)
