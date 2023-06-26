@@ -33,5 +33,5 @@ def load_config(file_path):
         config_str = config_file.read()
     return config_str
 config = load_config('config(book1).json')
-pyg.walk(df.head(10700), env='Streamlit', dark='dark', spec=config)
+pyg.walk(df.head(11700), env='Streamlit', dark='dark', spec=config)
 #pyg.walk(df, env='Streamlit', dark='dark', spec=config)
